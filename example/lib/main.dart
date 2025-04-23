@@ -54,30 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Center(
         child: TextButton(
           onPressed: () async {
-            // final ImagePicker picker = ImagePicker();
-
-            // final XFile? image =
-            //     await picker.pickImage(source: ImageSource.gallery);
-            // var bytes = await image?.readAsBytes();
-
-            // if (bytes != null) {
-            //   await documentDetector.setWhiteList([
-            //     ObjectDetectionObjectType.NATIONAL_ID_0,
-            //   ]);
-            //   List<DocumentScannerResult> detections =
-            //       await documentDetector.detect(bytes);
-
-            //   if (detections.isNotEmpty) {
-            //     showDialog(
-            //       context: context,
-            //       builder: (BuildContext context) {
-            //         return Dialog(
-            //           child: Image.memory(detections[0].documentImage),
-            //         );
-            //       },
-            //     );
-            //   }
-            // }
+           
             await showModalBottomSheet(
               context: context,
               isScrollControlled: true,
